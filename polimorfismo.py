@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class Animal:
     @abstractmethod
-    def fazer_som(self)
+    def fazer_som(self):
         pass
 
 

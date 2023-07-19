@@ -2,7 +2,7 @@ class Pessoa:
     def __init__(self,nome):
         self._nome = nome
 
-    def mostrar_documento():
+    def mostrar_documento(self):
         pass
 
 class Fisica(Pessoa):
@@ -26,15 +26,17 @@ class Juridica(Pessoa):
 f1 = Fisica("Fulano","232323232")
 j1 = Juridica("Beltrano", "5656565665")
 
-print(f1._nome)
 
 f1.mostrar_documento()
 j1.mostrar_documento()
 
 
 def mostrar_doc(pe):
-    print(pe.mostrar_documento());
+    return pe.mostrar_documento()
 
+print("=====")
+mostrar_doc(f1)
+mostrar_doc(j1)
 
 
 
